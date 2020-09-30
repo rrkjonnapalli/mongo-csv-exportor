@@ -1,0 +1,20 @@
+version: "3.0"
+
+services:
+  exportor:
+    container_name: exportor
+    build:
+      context: ./app
+    environment:
+      MONGO_CONNECTION_STRING: mongodb://mongo:27017
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+
+  mongo:
+    container_name: pando-mongo
+    build:
+      context: ./mongo
+    ports:
+      - 7017:27017

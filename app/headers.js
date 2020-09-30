@@ -1,0 +1,21 @@
+module.exports = [
+  '_id',
+  'order_id',
+  'client',
+  'created_date',
+  'transporter',
+  'vehicle_type',
+  'source',
+  'destination',
+  'price',
+  'first_name',
+  'last_name',
+  'expected_delivery_on',
+  'mobile_number',
+  'alternate_number',
+  'email',
+  'product_name',
+  'transaction_type',
+  'currency_code',
+  'zipcode'
+]
