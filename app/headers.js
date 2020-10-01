@@ -1,10 +1,10 @@
-module.exports = [
+const headers = [
   '_id',
   'order_id',
   'client',
   'created_date',
   'transporter',
-  'vehicle_type',
+  'vehicle',
   'source',
   'destination',
   'price',
@@ -18,4 +18,10 @@ module.exports = [
   'transaction_type',
   'currency_code',
   'zipcode'
-]
+];
+
+for (let i = 1; i <= 100; i += 1) {
+  headers.push(`f${i}`);
+}
+
+module.exports = headers;
